@@ -211,6 +211,51 @@ const App: () => Node = () => {
           </View>
 
           <View
+            style={{paddingHorizontal: 16, paddingTop: 0, paddingBottom: 32}}>
+            <Image
+              source={require('./assets/logo/gojek.png')}
+              style={{height: 15, width: 60, marginBottom: 15}}
+            />
+            <Text
+              style={{
+                fontSize: 17,
+                fontWeight: 'bold',
+                color: '#1C1C1C',
+                marginBottom: 20,
+              }}>
+              Complete your profile
+            </Text>
+            <View style={{flexDirection: 'row', marginBottom: 16}}>
+              <View>
+                <Image
+                  source={require('./assets/dummy/facebook-connect.png')}
+                />
+              </View>
+              <View style={{paddingLeft: 16}}>
+                <Text
+                  style={{fontSize: 15, color: '#4A4A4A', fontWeight: 'bold'}}>
+                  Connect with Facebook
+                </Text>
+                <Text style={{fontSize: 15, color: '#4A4A4A', width: '60%'}}>
+                  Log in faster without verification code
+                </Text>
+              </View>
+            </View>
+            <TouchableOpacity
+              style={{
+                backgroundColor: '#61A756',
+                paddingHorizontal: 12,
+                paddingVertical: 11,
+                borderRadius: 4,
+                alignSelf: 'flex-end',
+              }}>
+              <Text style={{color: 'white', fontSize: 13, fontWeight: 'bold'}}>
+                CONNECT
+              </Text>
+            </TouchableOpacity>
+          </View>
+
+          <View
             style={{
               marginHorizontal: 16,
               position: 'relative',
