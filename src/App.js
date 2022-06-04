@@ -262,7 +262,7 @@ const App: () => Node = () => {
               borderBottomWidth: 1,
               borderBottomColor: '#E8E9ED',
               paddingBottom: 16,
-              marginBottom: 20,
+              marginBottom: 16,
             }}>
             <Image
               source={require('./assets/dummy/food-banner.jpg')}
@@ -340,6 +340,175 @@ const App: () => Node = () => {
                 </TouchableOpacity>
               </View>
             </View>
+          </View>
+
+          <View style={{marginBottom: 16}}>
+            <View style={{width: 60, height: 15, marginLeft: 16}}>
+              <Image
+                source={require('./assets/logo/go-food.png')}
+                style={{
+                  height: undefined,
+                  width: undefined,
+                  resizeMode: 'contain',
+                  flex: 1,
+                }}
+              />
+            </View>
+            <View
+              style={{
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+                marginBottom: 16,
+                paddingHorizontal: 16,
+              }}>
+              <View>
+                <Text
+                  style={{fontSize: 17, fontWeight: 'bold', color: '#1C1C1C'}}>
+                  Nearby Restaurant
+                </Text>
+              </View>
+              <View>
+                <Text
+                  style={{fontSize: 17, fontWeight: 'bold', color: '#61A756'}}>
+                  See All
+                </Text>
+              </View>
+            </View>
+
+            <ScrollView horizontal style={{paddingLeft: 16}}>
+              <View style={{marginRight: 16}}>
+                <View style={{width: 150, height: 150, marginBottom: 12}}>
+                  <Image
+                    source={require('./assets/dummy/go-food-banka.jpg')}
+                    style={{
+                      width: undefined,
+                      height: undefined,
+                      resizeMode: 'cover',
+                      flex: 1,
+                      borderRadius: 10,
+                    }}
+                  />
+                </View>
+                <View>
+                  <Text
+                    style={{
+                      fontSize: 16,
+                      fontWeight: 'bold',
+                      color: '#1C1C1C',
+                    }}>
+                    Martabak Bangka
+                  </Text>
+                </View>
+              </View>
+
+              <View style={{marginRight: 16}}>
+                <View style={{width: 150, height: 150, marginBottom: 12}}>
+                  <Image
+                    source={require('./assets/dummy/go-food-gm.jpg')}
+                    style={{
+                      width: undefined,
+                      height: undefined,
+                      resizeMode: 'cover',
+                      flex: 1,
+                      borderRadius: 10,
+                    }}
+                  />
+                </View>
+                <View>
+                  <Text
+                    style={{
+                      fontSize: 16,
+                      fontWeight: 'bold',
+                      color: '#1C1C1C',
+                    }}>
+                    Bakmi GM
+                  </Text>
+                </View>
+              </View>
+
+              <View style={{marginRight: 16}}>
+                <View style={{width: 150, height: 150, marginBottom: 12}}>
+                  <Image
+                    source={require('./assets/dummy/go-food-kfc.jpg')}
+                    style={{
+                      width: undefined,
+                      height: undefined,
+                      resizeMode: 'cover',
+                      flex: 1,
+                      borderRadius: 10,
+                    }}
+                  />
+                </View>
+                <View>
+                  <Text
+                    style={{
+                      fontSize: 16,
+                      fontWeight: 'bold',
+                      color: '#1C1C1C',
+                    }}>
+                    KFC Antapani
+                  </Text>
+                </View>
+              </View>
+
+              <View style={{marginRight: 16}}>
+                <View style={{width: 150, height: 150, marginBottom: 12}}>
+                  <Image
+                    source={require('./assets/dummy/go-food-orins.jpg')}
+                    style={{
+                      width: undefined,
+                      height: undefined,
+                      resizeMode: 'cover',
+                      flex: 1,
+                      borderRadius: 10,
+                    }}
+                  />
+                </View>
+                <View>
+                  <Text
+                    style={{
+                      fontSize: 16,
+                      fontWeight: 'bold',
+                      color: '#1C1C1C',
+                    }}>
+                    Orins Jakarta
+                  </Text>
+                </View>
+              </View>
+
+              <View style={{marginRight: 16}}>
+                <View style={{width: 150, height: 150, marginBottom: 12}}>
+                  <Image
+                    source={require('./assets/dummy/go-food-pak-boss.jpg')}
+                    style={{
+                      width: undefined,
+                      height: undefined,
+                      resizeMode: 'cover',
+                      flex: 1,
+                      borderRadius: 10,
+                    }}
+                  />
+                </View>
+                <View>
+                  <Text
+                    style={{
+                      fontSize: 16,
+                      fontWeight: 'bold',
+                      color: '#1C1C1C',
+                    }}>
+                    Pak Boss Jakarta
+                  </Text>
+                </View>
+              </View>
+            </ScrollView>
+
+            <View
+              style={{
+                borderBottomWidth: 1,
+                paddingTop: 16,
+                marginHorizontal: 16,
+                borderBottomColor: '#E8E9ED',
+              }}></View>
           </View>
         </ScrollView>
       </View>
